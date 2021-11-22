@@ -36,20 +36,6 @@ class Point:
         if Point.check_data(x, y):
             self.change_position(x, y)
 
-
-pr = Point()
-pr_1 = Point(12, 33)
-pr_2 = Point(7, 10)
-pr_3 = Point(20, 10)
-print(pr_1.x, pr_1.y)
-print(pr_2.x, pr_2.y)
-
-res = pr_1 + pr_2
-res_2 = pr_1 - pr_2
-print(res.x, res.y)
-print(res_2.x, res_2.y)
-
-
 class Triangle:
     def __init__(self, x1, y1, x2, y2, x3, y3):
         if Point.check_data(x1, y1, x2, y2, x3, y3):
@@ -92,7 +78,21 @@ class Triangle:
             return AttributeError(f'Wrong apex {apex}')
 
 
-tr = Triangle(pr_1.x, pr_1.y, pr_2.x, pr_2.y, pr_3.x, pr_3.y)
-print(tr.get_perimeter())
-print(tr.get_area())
-print(tr.is_triangle(tr))
+#проверка:
+# pr = Point()
+# pr_1 = Point(12, 33)
+# pr_2 = Point(7, 10)
+# pr_3 = Point(20, 10)
+# print(pr_1.x, pr_1.y)
+# print(pr_2.x, pr_2.y)
+#
+# res = pr_1 + pr_2
+# res_2 = pr_1 - pr_2
+# print(res.x, res.y)
+# print(res_2.x, res_2.y)
+#
+#
+# tr = Triangle(pr_1.x, pr_1.y, pr_2.x, pr_2.y, pr_3.x, pr_3.y)
+# print(tr.get_perimeter())
+# print(tr.get_area())
+# print(tr.is_triangle(tr))
